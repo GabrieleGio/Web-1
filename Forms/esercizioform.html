@@ -10,20 +10,20 @@
     </head>
     <body>
         <h1>Modulo per inserire i dati</h1>
-        <form>
+        <form action="https://www.booking.com/start.php" method="get">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="fnome">Nome</label>
-                <input type="text" class="form-control" id="inputnome" placeholder="Nome">
+                <input type="text" name="fnome" class="form-control" id="inputnome" placeholder="Nome">
               </div>
               <div class="form-group">
                 <label for="fcognome">Cognome</label>
-                <input type="text" class="form-control" id="inputcognome" placeholder="Cognome">
+                <input type="text" name="fcognome" class="form-control" id="inputcognome" placeholder="Cognome">
               </div>
             </div>
             <div class="form-group">
               <label for="fdata">Data di nascita</label>
-              <input type="date" class="form-control" id="inputdata" placeholder="Data di nascita">
+              <input type="date" name="fdata" class="form-control" id="inputdata" placeholder="Data di nascita">
             </div>
             <div class="form-group">
                 <label for="fsesso">Sesso</label><br>
@@ -32,18 +32,19 @@
             </div>
             <div class="form-group">
                 <label for="findirizzo">Indirizzo</label>
-                <input type="text" class="form-control" id="inputindirizzo" placeholder="Indirizzo">
+                <input type="text" name="findirizzo" class="form-control" id="inputindirizzo" placeholder="Indirizzo">
               </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="fcitta">Città</label>
-                <input type="text" class="form-control" id="inputcitta" placeholder="Città">
+                <input type="text" name="fcitta" class="form-control" id="inputcitta" placeholder="Città">
               </div>
-            <div class="form-group col-md-6">
+                <div class="form-group col-md-6">
                 <label for="fcodicefiscale">Codice Fiscale</label>
-                <input type="text" class="form-control" id="inputcodicefiscale" placeholder="Codice fiscale" minlength="16" maxlength="16">
+                <input type="text" name="fcodicefiscale" class="form-control" id="inputcodicefiscale" placeholder="Codice fiscale" minlength="16" maxlength="16" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required" >
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">INVIA</button>
           </form>
     </body>
 </html>
