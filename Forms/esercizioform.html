@@ -14,16 +14,16 @@
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="fnome">Nome</label>
-                <input type="text" name="fnome" pattern="[a-zA-Z]{1,25}" class="form-control" id="inputnome" placeholder="Nome">
+                <input type="text" name="fnome" pattern="[a-zA-Z]{1,25}" class="form-control" id="inputnome" placeholder="Nome" required="required">
               </div>
               <div class="form-group">
                 <label for="fcognome">Cognome</label>
-                <input type="text" name="fcognome" pattern="[a-zA-Z]{1,25}" class="form-control" id="inputcognome" placeholder="Cognome">
+                <input type="text" name="fcognome" pattern="[a-zA-Z]{1,25}" class="form-control" id="inputcognome" placeholder="Cognome" required="required">
               </div>
             </div>
             <div class="form-group">
               <label for="fdata">Data di nascita</label>
-              <input type="date" name="fdata" class="form-control" id="inputdata" placeholder="Data di nascita">
+              <input type="date" name="fdata" class="form-control" id="inputdata" placeholder="Data di nascita" required="required">
             </div>
             <div class="form-group">
                 <label for="fsesso">Sesso</label><br>
@@ -32,12 +32,12 @@
             </div>
             <div class="form-group">
                 <label for="findirizzo">Indirizzo</label>
-                <input type="text" name="findirizzo" pattern="^(?=\S*\s)(?=[^a-zA-Z]*[a-zA-Z])(?=\D*\d)[a-zA-Z\d\s',.#/-]*$" class="form-control" id="inputindirizzo" placeholder="Indirizzo">
+                <input type="text" name="findirizzo" pattern="^(?=\S*\s)(?=[^a-zA-Z]*[a-zA-Z])(?=\D*\d)[a-zA-Z\d\s',.#/-]*$" class="form-control" id="inputindirizzo" placeholder="Indirizzo" required="required">
               </div>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="fcitta">Comune</label>
-                <input type="text" name="fcitta" class="form-control" id="inputcitta" placeholder="Città">
+                <input type="text" name="fcitta" class="form-control" id="inputcitta" placeholder="Città" required="required" maxlength="20">
               </div>
                 <div class="form-group col-md-6">
                 <label for="fcodicefiscale">Codice Fiscale</label>
@@ -46,7 +46,7 @@
             </div>
             <div class="form-group">
                 <label for="femail">Email address</label>
-                <input type="email" class="form-control" name="femail" id="inputemail" aria-describedby="emailHelp" placeholder="Email">
+                <input type="email" class="form-control" name="femail" id="inputemail" aria-describedby="emailHelp" placeholder="Email" required="required" maxlength="30">
                 <small id="emailHelp" class="form-text text-muted">Non condivideremo mai la tua email con nessuno.</small>
               </div>
             <button type="submit" class="btn btn-primary">INVIA</button>
